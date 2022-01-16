@@ -3,8 +3,8 @@ package ru.job4j.loop;
 public class LoopFor {
     public static void main(String[] args) {
         boolean result;
-        for (int i = 5; i <= 10; i++) {
-            System.out.println(i);
+        for (int l = 5; l <= 10; l++) {
+            System.out.println(l);
         }
     }
 }
