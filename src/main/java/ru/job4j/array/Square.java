@@ -1,0 +1,21 @@
+package ru.job4j.array;
+
+import java.sql.SQLOutput;
+
+public class Square {
+    public static int[] calculate(int bound) {
+        int[] rst = new int[bound];
+        for (int index = 0; index < rst.length; index++) {
+            rst[index] = index * index;
+        }
+        return rst;
+    }
+
+    public static void main(String[] args) {
+        int[] array = calculate(4);
+        for (int sqr : array) {
+            System.out.println(sqr);
+        }
+
+    }
+}
