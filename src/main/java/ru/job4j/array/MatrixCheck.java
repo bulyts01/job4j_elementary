@@ -2,43 +2,43 @@ package ru.job4j.array;
 
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
-        boolean result = true;
+        boolean rsl = true;
         for (int cell = 0; cell < board[row].length; cell++) {
             if (board[row][cell] != 'X') {
-                result = false;
+                rsl = false;
                 break;
             }
         }
-        return result;
+        return rsl;
     }
 
     public static boolean monoVertical(char[][] board, int column) {
-        boolean result = true;
+        boolean rsl = true;
         for (int cell = 0; cell < board.length; cell++) {
             if (board[cell][column] != 'X') {
-                result = false;
+                rsl = false;
                 break;
             }
         }
-        return result;
+        return rsl;
     }
 
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
-        for (int index = 0; index < board.length; index++) {
-            rsl[index] = board[index][index];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
         }
         return rsl;
     }
 
     public static boolean isWin(char[][] board) {
-        boolean result = false;
-        for (int index = 0; index < board.length; index++) {
-            if ((board[index][index] == 'X') && (monoVertical(board, index) || monoHorizontal(board, index))) {
-                result = true;
+        boolean rsl = false;
+        for (int i = 0; i < board.length; i++) {
+            if ((board[i][i] == 'X') && (monoVertical(board, i) || monoHorizontal(board, i))) {
+                rsl = true;
                 break;
             }
         }
-        return result;
+        return rsl;
     }
 }

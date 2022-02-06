@@ -5,8 +5,8 @@ public class Defragment {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);
         System.out.println();
-        for (int index = 0; index < compressed.length; index++) {
-            System.out.print(compressed[index] + " ");
+        for (int i = 0; i < compressed.length; i++) {
+            System.out.print(compressed[i] + " ");
         }
     }
 
