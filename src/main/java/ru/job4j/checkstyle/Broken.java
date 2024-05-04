@@ -6,11 +6,9 @@ public class Broken {
     public static final String NEW_VALUE = "";
     private String name;
 
-    Broken() {
-    }
+    Broken() { }
 
-    void echo() {
-    }
+    void echo() { }
 
     void media(Object obj) {
         if (obj != null) {
@@ -18,6 +16,5 @@ public class Broken {
         }
     }
 
-    void method(int a, int b, int c, int d, int e, int f, int g) {
-    }
+    void method(int a, int b, int c, int d, int e, int f, int g) { }
 }
